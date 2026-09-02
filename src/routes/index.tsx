@@ -1,11 +1,17 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, CheckCircle2, Mail, MapPin, Phone, ShieldCheck, Wrench } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import brandAsset from "@/assets/coastal-business-card.png.asset.json";
-import installedAsset from "@/assets/installed-backflow-assembly.png.asset.json";
-import testingAsset from "@/assets/backflow-pressure-test.png.asset.json";
-import detailAsset from "@/assets/backflow-device-detail.png.asset.json";
-import insulatedAsset from "@/assets/insulated-backflow-installation.png.asset.json";
+import brandImg from "@/assets/coastal-business-card.png";
+import installedImg from "@/assets/installed-backflow-assembly.png";
+import testingImg from "@/assets/backflow-pressure-test.png";
+import detailImg from "@/assets/backflow-device-detail.png";
+import insulatedImg from "@/assets/insulated-backflow-installation.png";
+
+const brandAsset = { url: brandImg };
+const installedAsset = { url: installedImg };
+const testingAsset = { url: testingImg };
+const detailAsset = { url: detailImg };
+const insulatedAsset = { url: insulatedImg };
 
 export const Route = createFileRoute("/")({
   head: () => ({
